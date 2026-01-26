@@ -2,13 +2,6 @@
 
 > **A robust, scalable test automation framework built with Playwright and JavaScript. Implements Page Object Model (POM) for UI and API testing, featuring dynamic data generation, custom logging, and automated end-to-end scenarios.**
 
----
-
-### 🏷️ Topics
-`playwright` | `test-automation` | `javascript` | `page-object-model` | `api-testing` | `ui-automation` | `e2e-testing` | `automation-framework` | `software-testing` | `qa-engineering`
-
----
-
 ## 🚀 How to Run the Tests
 
 ### 1. Prerequisites
