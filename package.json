@@ -1,13 +1,24 @@
 {
   "name": "test_auto",
   "version": "1.0.0",
-  "description": "",
+  "description": "A robust, scalable test automation framework built with Playwright and JavaScript. Implements Page Object Model (POM) for UI and API testing, featuring dynamic data generation, custom logging, and automated end-to-end scenarios.",
   "main": "index.js",
   "scripts": {
     "test": "playwright test",
     "test-headed": "playwright test --headed"
   },
-  "keywords": [],
+  "keywords": [
+    "playwright",
+    "test-automation",
+    "javascript",
+    "page-object-model",
+    "api-testing",
+    "ui-automation",
+    "e2e-testing",
+    "automation-framework",
+    "software-testing",
+    "qa-engineering"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
