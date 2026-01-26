@@ -1,6 +1,11 @@
 # Practice Software Testing - Automation Framework
 
-This is a structured, scalable test automation framework built from scratch using **Playwright** to test the UI and API layers of the [Practice Software Testing](https://practicesoftwaretesting.com/) application.
+> **A robust, scalable test automation framework built with Playwright and JavaScript. Implements Page Object Model (POM) for UI and API testing, featuring dynamic data generation, custom logging, and automated end-to-end scenarios.**
+
+---
+
+### 🏷️ Topics
+`playwright` | `test-automation` | `javascript` | `page-object-model` | `api-testing` | `ui-automation` | `e2e-testing` | `automation-framework` | `software-testing` | `qa-engineering`
 
 ---
 
@@ -39,6 +44,7 @@ You can run all tests (UI and API) using the following commands:
 The framework follows a modular pattern to ensure scalability and ease of maintenance:
 
 ```text
+├── .config/             # Editor settings and configurations
 ├── api/
 │   └── ApiClient.js         # Wrapper for API request logic
 ├── pages/
