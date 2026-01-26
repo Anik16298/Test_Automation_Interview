@@ -1,7 +1,7 @@
 # Practice Software Testing - Automation Framework
-
+--
 > **A robust, scalable test automation framework built with Playwright and JavaScript. Implements Page Object Model (POM) for UI and API testing, featuring dynamic data generation, custom logging, and automated end-to-end scenarios.**
-
+--
 ## 🚀 How to Run the Tests
 
 ### 1. Prerequisites
