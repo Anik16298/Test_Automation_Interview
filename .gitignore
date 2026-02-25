@@ -6,3 +6,9 @@ playwright/.cache/
 .env
 .idea/
 *.log
+debug_output.txt
+last_run.txt
+test_output.txt
+test_report.json
+test_summary.txt
+test_verification.txt
