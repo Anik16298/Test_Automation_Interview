@@ -9,7 +9,7 @@ export class ProductPage extends BasePage {
     }
 
     async addToCart() {
-        // Wait for response to ensure backend state consistency
+        // Couple click + cart API response so badge and checkout state are updated before assertions.
         await Promise.all([
             this.page.waitForResponse(resp => resp.url().includes('cart') && (resp.status() === 200 || resp.status() === 201)),
             this.addToCartButton.click()

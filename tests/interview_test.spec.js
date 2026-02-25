@@ -23,8 +23,7 @@ test.describe('UI Layer Tests', () => {
         Logger.log('Submitting form with valid data');
         const data = DataHelper.getValidContactPayload();
 
-        // UI expects separate names, so we split or just use static for UI if preferred.
-        // To match our Page Object's method: submitForm(firstName, lastName, email, subject, message)
+        // Keep names explicit because UI form fields are first-name/last-name, while payload helper returns contact data.
         await contactPage.submitForm(
             'John',
             'Doe',
@@ -77,11 +76,11 @@ test.describe('API Layer Tests', () => {
             Logger.error(`API Failure (${responseStatus}): ${responseBody}`);
         }
 
-        // Using a more descriptive expectation to see the body on failure
+        // Include response body in assertion message to speed up API failure triage.
         expect([200, 201], `Expected 200 or 201 but got ${responseStatus}. Body: ${responseBody}`).toContain(responseStatus);
 
         const body = JSON.parse(responseBody);
-        // The API might return different fields, let's verify it's an object or has certain properties
+        // Contract is tolerant on fields; enforce only that the response is valid JSON object.
         expect(typeof body).toBe('object');
         Logger.log(`API test passed with response body: ${responseBody}`);
     });

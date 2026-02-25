@@ -7,7 +7,7 @@ export class HomePage extends BasePage {
     }
 
     async selectProduct(productName) {
-        // Using first() as there might be multiple items or structure quirks, keeping consistent with previous successful locator strategy
+        // Product cards can expose duplicate text nodes; use the first visible match for stable navigation.
         await this.page.getByText(productName).first().click();
     }
 }

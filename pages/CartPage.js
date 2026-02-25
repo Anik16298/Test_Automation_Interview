@@ -15,7 +15,7 @@ export class CartPage extends BasePage {
         await this.quantityInput.fill(qty);
         await this.quantityInput.blur();
 
-        // Cart row is re-rendered by the app after quantity update.
+        // The checkout table rerenders after quantity change; re-query and assert the persisted value.
         await expect(this.cartRow.locator('input[type="number"]')).toHaveValue(qty);
     }
 
